@@ -1,0 +1,89 @@
+# Simple Organization Configuration
+# Deploy with: agent.ceo dashboard or the agent-ceo Python SDK
+
+org:
+  id: "my-startup"
+  name: "My SaaS Startup"
+  description: "A minimal cyborgenic organization for a SaaS product team"
+
+# Knowledge bases shared across the organization
+knowledge_bases:
+  - id: "kb-coding-standards"
+    name: "Coding Standards"
+    description: "Language style guides, linting rules, and architectural patterns"
+
+  - id: "kb-architecture-docs"
+    name: "Architecture Documentation"
+    description: "Architecture decision records, system design documents, API specs"
+
+  - id: "kb-runbooks"
+    name: "Operational Runbooks"
+    description: "Step-by-step procedures for deployments, incidents, and maintenance"
+
+# Agent definitions
+agents:
+  - name: "CTO Agent"
+    role: "cto"
+    template: "backend-python"
+    manager: null  # Reports to human CEO
+    capabilities:
+      - "architecture-review"
+      - "code-review"
+      - "task-delegation"
+      - "incident-coordination"
+    knowledge_bases:
+      - id: "kb-coding-standards"
+        access: "read"
+      - id: "kb-architecture-docs"
+        access: "write"
+      - id: "kb-runbooks"
+        access: "read"
+
+  - name: "Backend Agent"
+    role: "backend-engineer"
+    template: "backend-python"
+    manager: "cto"
+    capabilities:
+      - "python"
+      - "fastapi"
+      - "postgresql"
+      - "testing"
+    knowledge_bases:
+      - id: "kb-coding-standards"
+        access: "read"
+      - id: "kb-architecture-docs"
+        access: "read"
+
+  - name: "Fullstack Agent"
+    role: "fullstack-engineer"
+    template: "fullstack-ts"
+    manager: "cto"
+    capabilities:
+      - "typescript"
+      - "react"
+      - "nextjs"
+      - "tailwind"
+      - "playwright"
+    knowledge_bases:
+      - id: "kb-coding-standards"
+        access: "read"
+      - id: "kb-architecture-docs"
+        access: "read"
+
+# Meeting schedule
+meetings:
+  - type: "standup"
+    frequency: "daily"
+    participants: ["cto", "backend-engineer", "fullstack-engineer"]
+    agenda:
+      - "Yesterday's progress"
+      - "Today's plan"
+      - "Blockers"
+
+  - type: "sprint-planning"
+    frequency: "biweekly"
+    participants: ["cto", "backend-engineer", "fullstack-engineer"]
+    agenda:
+      - "Sprint retrospective"
+      - "Backlog prioritization"
+      - "Task assignment"
