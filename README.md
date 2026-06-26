@@ -21,6 +21,7 @@ Reusable design patterns for common cyborgenic workflows:
 | [Enterprise Discovery & Onboarding](./patterns/enterprise-discovery-onboarding.md) | Patterns for discovering what agents an enterprise needs and onboarding them |
 | [Agent Meeting Protocol](./patterns/agent-meeting-protocol.md) | Structured communication between agents for decision-making and sync |
 | [Observable Loop (Observer / Observed)](./patterns/observable-loop.md) | A standing critic (observer) judges builders' solutions against better alternatives on evidence and drives swaps, looping to convergence — without writing the code itself |
+| [Agentic Recursion (Delegate-and-Return)](./patterns/agentic-recursion.md) | An agent calls an agent of its choice, which calls another, … until a stop condition; the result returns up the stack. Pausable/stoppable, editable stop-condition + choice-set |
 
 ## Templates
 
