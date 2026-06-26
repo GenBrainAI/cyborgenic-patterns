@@ -20,6 +20,7 @@ Reusable design patterns for common cyborgenic workflows:
 | [Knowledge-Base-Driven Agents](./patterns/knowledge-base-driven-agents.md) | Using shared knowledge bases to give agents organizational context |
 | [Enterprise Discovery & Onboarding](./patterns/enterprise-discovery-onboarding.md) | Patterns for discovering what agents an enterprise needs and onboarding them |
 | [Agent Meeting Protocol](./patterns/agent-meeting-protocol.md) | Structured communication between agents for decision-making and sync |
+| [Observable Loop (Observer / Observed)](./patterns/observable-loop.md) | A standing critic (observer) judges builders' solutions against better alternatives on evidence and drives swaps, looping to convergence — without writing the code itself |
 
 ## Templates
 
