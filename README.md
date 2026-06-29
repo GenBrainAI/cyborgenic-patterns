@@ -22,6 +22,8 @@ Reusable design patterns for common cyborgenic workflows:
 | [Agent Meeting Protocol](./patterns/agent-meeting-protocol.md) | Structured communication between agents for decision-making and sync |
 | [Observable Loop (Observer / Observed)](./patterns/observable-loop.md) | A standing critic (observer) judges builders' solutions against better alternatives on evidence and drives swaps, looping to convergence — without writing the code itself |
 | [Agentic Recursion (Delegate-and-Return)](./patterns/agentic-recursion.md) | An agent calls an agent of its choice, which calls another, … until a stop condition; the result returns up the stack. Pausable/stoppable, editable stop-condition + choice-set |
+| [Ralph Loop (Fresh-Context Task Drain)](./patterns/ralph-loop.md) | The primitive build engine: fresh context every iteration, one task per pass, state externalized to repo + progress file + git; drain a task list to empty. Composes as the Observed builder inside an Observable Loop |
+| [AutoResearch Loop (Propose · Run · Measure · Keep-or-Revert)](./patterns/autoresearch-loop.md) | The primitive search engine (Karpathy AutoResearch / self-improving): an LLM edits code, runs a real experiment, scores one objective metric, keeps on improve else reverts; swarm in parallel operands, observer promotes winners to scale |
 
 ## Templates
 
